@@ -8,4 +8,10 @@ pipeline{
             }
         }
     }
+    stage('Check Workspace') {
+            steps {
+                sh 'pwd'
+                sh 'ls -la'
+            }
+    }
 }
