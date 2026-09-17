@@ -4,7 +4,7 @@ pipeline{
     stages{
         stage('test-shared-library'){
             steps{
-                dockerPipeline()
+                dockerPipeline('avejlanjekar45/jenkins-docker-pipeline')
             }
         }
     }
