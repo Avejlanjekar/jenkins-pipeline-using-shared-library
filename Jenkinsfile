@@ -10,7 +10,7 @@ pipeline{
         }
         stage('test-shared-library'){
             steps{
-                dockerPipeline('avejlanjekar45/jenkins-docker-pipeline-using-sl')
+                dockerPipeline('avejlanjekar45/jenkins-docker-pipeline-using-sl','dockerhub-credentials','https://registry.hub.docker.com')
             }
         }
     }
